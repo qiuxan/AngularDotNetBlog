@@ -1,0 +1,7 @@
+# General
+.DS_Store
+.idea/
+.vscode/
+
+# Each project has its own .gitignore
+# This is just for workspace-level ignores
