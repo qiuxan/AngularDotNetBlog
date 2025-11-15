@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "QUFbamD9I44=",
+  "success": true,
+  "projectFilePath": "/Users/xianqiu/Projects/AngularDotNetBlog/BlogApi/BlogApi.csproj",
+  "expectedPackageFiles": [
+    "/Users/xianqiu/.nuget/packages/microsoft.aspnetcore.openapi/9.0.11/microsoft.aspnetcore.openapi.9.0.11.nupkg.sha512",
+    "/Users/xianqiu/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

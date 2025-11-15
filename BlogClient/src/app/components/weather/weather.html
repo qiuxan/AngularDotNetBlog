@@ -1,0 +1,20 @@
+<div class="weather-container">
+  <h2>Weather Forecast</h2>
+
+  <div *ngIf="loading" class="loading">
+    Loading weather data...
+  </div>
+
+  <div *ngIf="error" class="error">
+    {{ error }}
+    <button (click)="loadWeather()">Retry</button>
+  </div>
+
+  <div *ngIf="!loading && !error" class="forecast-grid">
+    <div *ngFor="let forecast of forecasts" class="forecast-card">
+      <h3>{{ forecast.date }}</h3>
+      <p class="temperature">{{ forecast.temperatureC }}°C / {{ forecast.temperatureF }}°F</p>
+      <p class="summary">{{ forecast.summary }}</p>
+    </div>
+  </div>
+</div>
