@@ -12,4 +12,6 @@ public class Post
     public DateTime CreatedAt { get;set; } = default;
     public DateTime? UpdatedAt { get;set; } = default;
     
+    public bool Published { get; set; } = false;
+    
 }
