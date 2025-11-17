@@ -47,7 +47,7 @@ public class PostsController: Controller
         _db.Posts.Add(post);
         await _db.SaveChangesAsync();
 
-        // 返回 201 + 文章内容
+        //give 201 + content
         return CreatedAtAction(nameof(GetBySlug), new { slug = post.Slug }, post);
     }
 
