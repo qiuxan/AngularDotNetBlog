@@ -1,5 +1,6 @@
 using BlogApi.Data;
 using BlogApi.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,6 +18,7 @@ public class PostsController: Controller
     
     // GET: api/posts
     [HttpGet]
+    [Authorize] 
     public async Task<ActionResult<IEnumerable<Post>>> GetAll()
     {
         var posts = await _db.Posts
